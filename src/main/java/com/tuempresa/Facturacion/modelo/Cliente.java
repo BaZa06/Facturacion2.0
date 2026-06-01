@@ -2,7 +2,7 @@ package com.tuempresa.Facturacion.modelo;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.logging.log4j.core.config.plugins.validation.constraints.Required;
+import org.openxava.annotations.Required;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
