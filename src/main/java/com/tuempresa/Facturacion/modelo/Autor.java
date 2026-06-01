@@ -10,7 +10,7 @@ import java.util.Collection;
 @Entity @Getter @Setter
 public class Autor {
 
-    @Id @GeneratedValue(generator = "system-uuid", strategy = "uuid")
+    @Id @GeneratedValue(generator = "system-uuid") @Hidden
     @GenericGenerator(name  = "system-uuid", strategy = "uuid")
     @Column(length = 32)
     String oid;
