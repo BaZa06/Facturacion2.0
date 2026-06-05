@@ -87,5 +87,22 @@
 	      driverClassName="org.firebirdsql.jdbc.FBDriver"
 	      url="jdbc:firebirdsql://localhost:3050/c:/db/Facturacion.fdb"/>
 	-->
+
+
+
+	<!--Conxion con PostgreSQL, recuerda añadir la dependencia al pom.xml-->
+	<Resource
+			name="jdbc/FacturacionDS"
+			auth="Container"
+			type="javax.sql.DataSource"
+			maxTotal="100"
+			maxIdle="20"
+			maxWaitMillis="10000"
+			username="postgres"
+			password="BlAlZeAb46!"
+			driverClassName="org.postgresql.Driver"
+			url="jdbc:postgresql://localhost:5432/facturacion"/>
 	                  	      
 </Context>
+
+
